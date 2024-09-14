@@ -27,7 +27,7 @@
             <input type="text" value="{{$users->city}}" class="form-control" name="usercity">
         </div>
         <div class="mb-3">
-            <button class="btn btn-success" > Save</button>
+            <button class="btn btn-success" >Save</button>
             <a href="{{route('users.index')}}"  class="btn btn-info">Back</a>
         </div>
     </form>

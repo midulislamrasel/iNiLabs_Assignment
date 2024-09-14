@@ -27,13 +27,11 @@
                 <td> {{$user->city}}</td>
 
                 <td><a href="{{route('users.show', $user->id)}}" class="btn btn-primary btn-sm">View</a></td>
-                <td>
-                    <form action="{{route('users.destroy',$user->id)}}" method="POST">
+                <td><form action="{{route('users.destroy',$user->id)}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                    </form>
-                </td>
+                    </form></td>
                 <td><a href="{{route('users.edit', $user->id)}}" class="btn btn-info btn-sm">Update</a></td>
             </tr>
         @endforeach
